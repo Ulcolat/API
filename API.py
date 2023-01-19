@@ -22,5 +22,8 @@ def messsage_txt(message):
 
 #          MAIN    ##################
 if __name__ =='__main__':
+    API.set_my_commands([
+        telebot.types.BotCommand("/start","Da la bienvenida")
+    ])
     print("Iniciando API")
     API.infinity_polling()
